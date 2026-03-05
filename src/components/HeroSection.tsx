@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-illustration.png";
 
 const HeroSection = () => {
@@ -35,20 +36,24 @@ const HeroSection = () => {
             </p>
 
             <div className="flex flex-col gap-4 sm:flex-row">
-              <Button
-                size="lg"
-                className="bg-secondary text-secondary-foreground hover:bg-secondary/90 shadow-gold text-base font-semibold px-8"
-              >
-                Start Learning Free
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 text-base"
-              >
-                Explore Roadmaps
-              </Button>
+              <Link to="/auth">
+                <Button
+                  size="lg"
+                  className="bg-secondary text-secondary-foreground hover:bg-secondary/90 shadow-gold text-base font-semibold px-8"
+                >
+                  Start Learning Free
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
+              <Link to="/roadmaps">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 text-base"
+                >
+                  Explore Roadmaps
+                </Button>
+              </Link>
             </div>
 
             <div className="mt-10 flex items-center gap-8">

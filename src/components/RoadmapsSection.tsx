@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const roadmaps = [
   { name: "Python", levels: 8, learners: "3.2K", emoji: "🐍", progress: 75 },
@@ -73,10 +74,12 @@ const RoadmapsSection = () => {
           viewport={{ once: true }}
           className="mt-12 text-center"
         >
-          <Button variant="outline" size="lg" className="font-semibold">
-            View All Roadmaps
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+          <Link to="/roadmaps">
+            <Button variant="outline" size="lg" className="font-semibold">
+              View All Roadmaps
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
         </motion.div>
       </div>
     </section>
