@@ -20,8 +20,8 @@ const features = [
     description: "Stay consistent with daily practice exercises and real-time coding challenges.",
     color: "text-accent",
     bg: "bg-accent/10",
-    detail: "Receive fresh coding challenges every day tailored to your current skill level. Build consistency through daily practice, solve real-world problems, and earn XP to level up your profile.",
-    cta: { label: "Start Learning", path: "/roadmaps" },
+    detail: "Receive fresh coding challenges every day tailored to your current skill level. Build consistency through daily practice, solve real-world problems, and earn XP to level up.",
+    cta: { label: "View Today's Tasks", path: "/daily-tasks" },
   },
   {
     icon: Trophy,
@@ -29,8 +29,8 @@ const features = [
     description: "Earn badges, unlock achievements, and compete on leaderboards to stay motivated.",
     color: "text-secondary",
     bg: "bg-secondary/10",
-    detail: "Learning should be fun! Earn badges for completing milestones, maintain streaks for consistency, climb leaderboards, and unlock achievements as you progress through your journey.",
-    cta: { label: "Get Started", path: "/auth" },
+    detail: "Mark milestones as done to earn badges! Track achievements across categories like streaks, daily tasks, and exploration. Collect them all to become a SkillPath legend.",
+    cta: { label: "View Achievements", path: "/achievements" },
   },
   {
     icon: Brain,
@@ -39,7 +39,7 @@ const features = [
     color: "text-accent",
     bg: "bg-accent/10",
     detail: "No more searching across platforms. We curate the best free and paid resources — videos, articles, documentation, and projects — organized by topic and difficulty level.",
-    cta: { label: "Explore Resources", path: "/roadmaps" },
+    cta: { label: "Explore Resources", path: "/resources" },
   },
   {
     icon: Zap,
@@ -47,8 +47,8 @@ const features = [
     description: "AI-powered recommendations that adapt to your pace, goals, and learning style.",
     color: "text-secondary",
     bg: "bg-secondary/10",
-    detail: "Our AI engine analyzes your progress, strengths, and weak areas to recommend the most effective next steps. Learn at your own pace with a path that adapts to you.",
-    cta: { label: "Try It Free", path: "/auth" },
+    detail: "Answer a few quick questions about your experience, goals, and preferred pace — and we'll recommend the perfect learning path tailored just for you.",
+    cta: { label: "Find Your Path", path: "/personalized" },
   },
   {
     icon: BarChart3,
@@ -56,8 +56,8 @@ const features = [
     description: "Visual dashboards showing your growth, streaks, and skill proficiency over time.",
     color: "text-accent",
     bg: "bg-accent/10",
-    detail: "Track every milestone with beautiful visual dashboards. See your learning streaks, XP growth, skill proficiency charts, and completion rates — all in one place.",
-    cta: { label: "View Dashboard", path: "/dashboard" },
+    detail: "Track your learning consistency month by month with an interactive calendar. See your streaks, active days, and completion rates at a glance.",
+    cta: { label: "Track Progress", path: "/progress" },
   },
 ];
 
