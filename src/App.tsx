@@ -9,6 +9,11 @@ import Auth from "./pages/Auth";
 import Dashboard from "./pages/Dashboard";
 import Roadmaps from "./pages/Roadmaps";
 import RoadmapDetail from "./pages/RoadmapDetail";
+import DailyTasks from "./pages/DailyTasks";
+import Achievements from "./pages/Achievements";
+import Resources from "./pages/Resources";
+import ProgressTracker from "./pages/ProgressTracker";
+import PersonalizedPaths from "./pages/PersonalizedPaths";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +31,11 @@ const App = () => (
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/roadmaps" element={<Roadmaps />} />
             <Route path="/roadmap/:slug" element={<RoadmapDetail />} />
+            <Route path="/daily-tasks" element={<DailyTasks />} />
+            <Route path="/achievements" element={<Achievements />} />
+            <Route path="/resources" element={<Resources />} />
+            <Route path="/progress" element={<ProgressTracker />} />
+            <Route path="/personalized" element={<PersonalizedPaths />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
