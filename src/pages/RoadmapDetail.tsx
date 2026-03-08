@@ -4,6 +4,7 @@ import { ArrowLeft, Clock, BookOpen, Video, FileText, Code, Folder, CheckCircle2
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import BackButton from "@/components/BackButton";
 import { roadmapDetails } from "@/data/roadmapData";
 import { useState } from "react";
 import { useAuth } from "@/contexts/AuthContext";
