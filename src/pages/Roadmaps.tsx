@@ -38,6 +38,7 @@ const Roadmaps = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
+      <BackButton />
 
       <section className="pt-32 pb-12 bg-hero relative overflow-hidden">
         <div className="absolute inset-0 opacity-10" style={{

@@ -117,6 +117,7 @@ const PersonalizedPaths = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
+      <BackButton />
       <main className="container mx-auto px-6 pb-20 pt-28 max-w-2xl">
         <Link to="/" className="mb-6 inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors">
           <ArrowLeft className="h-4 w-4" /> Back to Home
