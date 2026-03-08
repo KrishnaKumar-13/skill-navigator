@@ -4,6 +4,7 @@ import { Trophy, CheckCircle2, Circle, Star, Award, Medal, Crown, Gem, Rocket, T
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import BackButton from "@/components/BackButton";
 
 interface Achievement {
   id: string;
