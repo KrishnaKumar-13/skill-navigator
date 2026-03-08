@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import BackButton from "@/components/BackButton";
 import { useState } from "react";
 
 const allRoadmaps = [
@@ -37,6 +38,7 @@ const Roadmaps = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
+      <BackButton />
 
       <section className="pt-32 pb-12 bg-hero relative overflow-hidden">
         <div className="absolute inset-0 opacity-10" style={{

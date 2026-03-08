@@ -1,24 +1,30 @@
 import { Compass } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="border-t border-border bg-card py-12">
+    <footer className="border-t border-border/50 bg-card py-12">
       <div className="container mx-auto px-6">
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
-          <div className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-secondary">
-              <Compass className="h-4 w-4 text-secondary-foreground" />
+          <Link to="/" className="flex items-center gap-2">
+            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent/10">
+              <Compass className="h-4 w-4 text-accent" />
             </div>
             <span className="text-lg font-bold font-display text-foreground">
-              Skill<span className="text-gradient-gold">Path</span>
+              Skill<span className="text-gradient-cyan">Path</span>
             </span>
-          </div>
+          </Link>
 
-          <div className="flex gap-8">
-            {["Features", "Roadmaps", "Pricing", "About", "Contact"].map((link) => (
-              <a key={link} href="#" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
-                {link}
-              </a>
+          <div className="flex flex-wrap justify-center gap-8">
+            {[
+              { label: "Features", href: "/#features" },
+              { label: "Services", href: "/services" },
+              { label: "Roadmaps", href: "/roadmaps" },
+              { label: "Contact", href: "/contact" },
+            ].map((link) => (
+              <Link key={link.label} to={link.href} className="text-sm text-muted-foreground transition-colors hover:text-accent">
+                {link.label}
+              </Link>
             ))}
           </div>
 

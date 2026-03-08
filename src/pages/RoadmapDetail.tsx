@@ -4,6 +4,7 @@ import { ArrowLeft, Clock, BookOpen, Video, FileText, Code, Folder, CheckCircle2
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import BackButton from "@/components/BackButton";
 import { roadmapDetails } from "@/data/roadmapData";
 import { useState } from "react";
 import { useAuth } from "@/contexts/AuthContext";
@@ -34,6 +35,7 @@ const RoadmapDetail = () => {
     return (
       <div className="min-h-screen bg-background">
         <Navbar />
+        <BackButton />
         <div className="container mx-auto px-6 pt-32 text-center">
           <h1 className="text-3xl font-bold text-foreground mb-4">Roadmap Not Found</h1>
           <Link to="/roadmaps">
@@ -52,6 +54,7 @@ const RoadmapDetail = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
+      <BackButton />
 
       {/* Hero */}
       <section className="pt-32 pb-12 bg-hero relative overflow-hidden">

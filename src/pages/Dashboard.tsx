@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Link, useNavigate } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import BackButton from "@/components/BackButton";
 import { useAuth } from "@/contexts/AuthContext";
 import { supabase } from "@/integrations/supabase/client";
 
@@ -55,6 +56,7 @@ const Dashboard = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
+      <BackButton />
 
       <section className="pt-32 pb-8">
         <div className="container mx-auto px-6">

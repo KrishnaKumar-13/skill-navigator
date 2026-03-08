@@ -14,6 +14,8 @@ import Achievements from "./pages/Achievements";
 import Resources from "./pages/Resources";
 import ProgressTracker from "./pages/ProgressTracker";
 import PersonalizedPaths from "./pages/PersonalizedPaths";
+import Services from "./pages/Services";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -36,6 +38,8 @@ const App = () => (
             <Route path="/resources" element={<Resources />} />
             <Route path="/progress" element={<ProgressTracker />} />
             <Route path="/personalized" element={<PersonalizedPaths />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
