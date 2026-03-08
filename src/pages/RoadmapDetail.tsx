@@ -54,6 +54,7 @@ const RoadmapDetail = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
+      <BackButton />
 
       {/* Hero */}
       <section className="pt-32 pb-12 bg-hero relative overflow-hidden">
