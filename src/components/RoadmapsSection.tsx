@@ -14,20 +14,22 @@ const roadmaps = [
 
 const RoadmapsSection = () => {
   return (
-    <section id="roadmaps" className="py-24 bg-background">
-      <div className="container mx-auto px-6">
+    <section id="roadmaps" className="py-24 bg-background relative overflow-hidden">
+      <div className="absolute top-1/2 right-0 w-80 h-80 rounded-full bg-accent/5 blur-3xl pointer-events-none" />
+
+      <div className="container mx-auto px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="mx-auto mb-16 max-w-2xl text-center"
         >
-          <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-secondary">
+          <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-accent">
             Skill Roadmaps
           </span>
           <h2 className="mb-4 text-3xl font-bold text-foreground sm:text-4xl">
             Popular Learning{" "}
-            <span className="text-gradient-gold">Paths</span>
+            <span className="text-gradient-cyan">Paths</span>
           </h2>
           <p className="text-lg text-muted-foreground">
             Choose from 50+ structured roadmaps across in-demand technical skills.
@@ -42,11 +44,11 @@ const RoadmapsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.08 }}
-              className="group cursor-pointer rounded-2xl border border-border bg-card p-6 shadow-card transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1"
+              className="group glow-border cursor-pointer rounded-2xl border border-border bg-card p-6 shadow-card transition-all duration-300 hover:shadow-glow hover:-translate-y-1"
             >
               <div className="mb-4 flex items-center justify-between">
                 <span className="text-3xl">{roadmap.emoji}</span>
-                <span className="rounded-full bg-muted px-3 py-1 text-xs font-medium text-muted-foreground">
+                <span className="rounded-full bg-accent/10 px-3 py-1 text-xs font-medium text-accent">
                   {roadmap.levels} levels
                 </span>
               </div>
@@ -60,7 +62,7 @@ const RoadmapsSection = () => {
                   whileInView={{ width: `${roadmap.progress}%` }}
                   viewport={{ once: true }}
                   transition={{ duration: 1, delay: 0.3 + index * 0.1 }}
-                  className="h-full rounded-full bg-gradient-to-r from-secondary to-emerald"
+                  className="h-full rounded-full bg-gradient-to-r from-accent to-emerald"
                 />
               </div>
               <p className="text-xs text-muted-foreground">{roadmap.progress}% avg completion</p>
@@ -75,7 +77,7 @@ const RoadmapsSection = () => {
           className="mt-12 text-center"
         >
           <Link to="/roadmaps">
-            <Button variant="outline" size="lg" className="font-semibold">
+            <Button variant="outline" size="lg" className="font-semibold hover:shadow-glow hover:border-accent transition-all">
               View All Roadmaps
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
