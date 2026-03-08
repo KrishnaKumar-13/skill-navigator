@@ -35,6 +35,7 @@ const RoadmapDetail = () => {
     return (
       <div className="min-h-screen bg-background">
         <Navbar />
+        <BackButton />
         <div className="container mx-auto px-6 pt-32 text-center">
           <h1 className="text-3xl font-bold text-foreground mb-4">Roadmap Not Found</h1>
           <Link to="/roadmaps">
